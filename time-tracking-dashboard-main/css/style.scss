@@ -1,0 +1,468 @@
+@import "variables";
+
+html {
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $VeryDarkBlue;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Grid layout */
+.grid__layout {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.c1 {
+  grid-row: 1/3;
+}
+
+/* Person Card */
+.person__card {
+  height: 520px;
+  width: 260px;
+  background-color: $DarkBlue;
+  border-radius: 13px;
+  margin: 10px;
+}
+
+.person__container {
+  background-color: $Blue;
+  height: 365px;
+  border-radius: 13px;
+
+  img {
+    width: 80px;
+    height: 80px;
+    margin: 30px;
+    border: 3.5px solid white;
+    border-radius: 50%;
+  }
+}
+
+.report__of__text {
+  color: $PaleBlue;
+  margin: 0px 0px 0px 30px;
+  font-weight: 300;
+}
+
+.person__name {
+  color: white;
+  margin: 0px 0px 0px 30px;
+  font-weight: 300;
+  font-size: 45px;
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  button{
+    background: none;
+    outline: none;
+    border: none;
+    color: $PaleBlue;
+    margin: 13px 0px 10px 30px;
+  }
+
+  button:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.active{
+    color: white;
+}
+
+/* work card */
+.work {
+  width: 260px;
+  height: 250px;
+  background-color: $LightRedWork;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13px;
+  position: relative;
+  background-image: url(/images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+  margin: 10px;
+
+  .card_inside {
+    width: 260px;
+    height: 200px;
+    background-color: $DarkBlue;
+    border-radius: 11px;
+    top: 50px;
+    position: absolute;
+  }
+
+  //Hover
+  .card_inside:hover {
+    background-color: $DesaturatedBlue;
+    cursor: pointer;
+  }
+
+  .text_container {
+    margin: 20px;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      margin: 15px 0px 5px 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: $PaleBlue;
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+/* Play card */
+
+.play {
+  width: 260px;
+  height: 250px;
+  background-color: $SoftBluePlay;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13px;
+  position: relative;
+  background-image: url(/images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+  margin: 10px;
+
+  .card_inside {
+    width: 260px;
+    height: 200px;
+    background-color: $DarkBlue;
+    border-radius: 11px;
+    top: 50px;
+    position: absolute;
+  }
+
+  //Hover
+  .card_inside:hover {
+    background-color: $DesaturatedBlue;
+    cursor: pointer;
+  }
+  .text_container {
+    margin: 20px;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      margin: 15px 0px 5px 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: $PaleBlue;
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+/* Study Card */
+
+.study {
+  width: 260px;
+  height: 250px;
+  background-color: $LightRedStudy;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13px;
+  position: relative;
+  background-image: url(/images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+  margin: 10px;
+
+  .card_inside {
+    width: 260px;
+    height: 200px;
+    background-color: $DarkBlue;
+    border-radius: 11px;
+    top: 50px;
+    position: absolute;
+  }
+
+  //Hover
+  .card_inside:hover {
+    background-color: $DesaturatedBlue;
+    cursor: pointer;
+  }
+  .text_container {
+    margin: 20px;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      margin: 15px 0px 5px 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: $PaleBlue;
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+/* exercise */
+
+.exercise {
+  width: 260px;
+  height: 250px;
+  background-color: $LimeGreenExercise;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13px;
+  position: relative;
+  background-image: url(/images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+  margin: 10px;
+
+  .card_inside {
+    width: 260px;
+    height: 200px;
+    background-color: $DarkBlue;
+    border-radius: 11px;
+    top: 50px;
+    position: absolute;
+  }
+
+  //Hover
+  .card_inside:hover {
+    background-color: $DesaturatedBlue;
+    cursor: pointer;
+  }
+
+  .text_container {
+    margin: 20px;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      margin: 15px 0px 5px 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: $PaleBlue;
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+/* Social Card */
+
+.social {
+  width: 260px;
+  height: 250px;
+  background-color: $VioletSocial;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13px;
+  position: relative;
+  background-image: url(/images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+  margin: 10px;
+
+  .card_inside {
+    width: 260px;
+    height: 200px;
+    background-color: $DarkBlue;
+    border-radius: 11px;
+    top: 50px;
+    position: absolute;
+  }
+
+  //Hover
+  .card_inside:hover {
+    background-color: $DesaturatedBlue;
+    cursor: pointer;
+  }
+
+  .text_container {
+    margin: 20px;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      margin: 15px 0px 5px 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: $PaleBlue;
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+/* Self care card */
+
+.self_care {
+  width: 260px;
+  height: 250px;
+  background-color: $SoftOrangeSelfCare;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13px;
+  position: relative;
+  background-image: url(/images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px right 12px;
+  margin: 10px;
+
+  .card_inside {
+    width: 260px;
+    height: 200px;
+    background-color: $DarkBlue;
+    border-radius: 11px;
+    top: 50px;
+    position: absolute;
+  }
+
+  //Hover
+  .card_inside:hover {
+    background-color: $DesaturatedBlue;
+    cursor: pointer;
+  }
+  .text_container {
+    margin: 20px;
+    color: white;
+
+    h2 {
+      font-size: 50px;
+      margin: 15px 0px 5px 6px;
+      font-weight: 300;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: $PaleBlue;
+      margin-top: 0;
+      font-size: 15px;
+    }
+  }
+
+  .title_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-weight: 500;
+    }
+  }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  border-style:none; 
+}
+
+
+//responsive
+@import "responsive";
